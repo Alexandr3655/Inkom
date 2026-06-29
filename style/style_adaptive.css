@@ -1,0 +1,102 @@
+@media screen and (max-width:1024px) {
+
+    .container-xxl {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .info-boss {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+
+    .menu {
+        display: none !important;
+    }
+
+    .burger {
+        display: inline-block;
+        width: auto;
+        display: block;
+        border: 0;
+        background-color: transparent;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 0;
+    }
+
+    .place-ico {
+        height: 80%;
+    }
+
+    .mail-ico {
+        height: 60%;
+    }
+
+    .burger-png {
+        width: 60%;
+    }
+
+    .burger:hover {
+        cursor: pointer;
+    }
+
+    .fs-3 {
+        font-size: clamp(14px, calc(14px + 21 * ((100vw - 320px) / 1120)), 35px) !important;
+    }
+
+    .text-3 {
+        width: 40%;
+    }
+
+
+    /*reset hovers start*/
+
+    .link-place:hover,
+    .mail-boss:hover,
+    .info-boss:hover {
+        opacity: 1;
+    }
+
+    .cards:hover,
+    .contact-box-left a:hover,
+    .btn-up:hover {
+        transform: none !important;
+        box-shadow: none !important;
+        text-decoration: none !important;
+    }
+
+    .cromatec:hover {
+        color: inherit !important;
+    }
+
+    /*reset hovers end*/
+
+
+    .cards:active {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) !important;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .fs-6 {
+        font-size: calc(5px + 0.5vw) !important;
+    }
+
+    .info-header {
+        padding: 1% 0;
+    }
+
+    .header-menu {
+        padding: 1% 0;
+    }
+}

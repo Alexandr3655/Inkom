@@ -1,0 +1,103 @@
+/*styles overlay start*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 999;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*styles overlay end*/
+
+.openMenu {
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 280px;
+    height: 100%;
+    background: #BED9FF;
+    padding: 40px 32px 32px;
+    transition: right 0.8s ease-in-out;
+    z-index: 1100;
+    box-shadow: -6px 0 30px rgba(0, 72, 176, 0.20);
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.openMenu.active {
+    right: 0;
+}
+
+
+/* styles button to close start */
+
+.menu-close {
+    padding: 0 !important;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: 2px solid #0048B0;
+    border-radius: 20%;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-close:active {
+    border: 5px solid #0048B0;
+}
+
+.close-svg {
+    width: 100%;
+    padding: 20%;
+}
+
+/* styles button to close end */
+
+
+/* styles menu start */
+
+.linkMenu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navMenu {
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 30%;
+}
+
+.navMenu li {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0048B0 !important;
+    padding: 16px 0 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+li a {
+    color: #0048B0 !important;
+}
+
+li a:active {
+    color: #0351c19e !important;
+    text-decoration: underline !important;
+}
+
+/* styles menu end */

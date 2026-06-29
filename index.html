@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inkom</title>
+
+    <!--для SEO описания-->
+    <meta name="discription" content="" />
+
+    <!--Подключаем Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--My stayles-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_adaptive.css">
+    <link rel="stylesheet" href="style/menu.css">
+
+    <!-- FavIco-->
+    <link rel="icon" type="image/png" href="/style/img/ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/style/img/ico/favicon.svg" />
+    <link rel="shortcut icon" href="/style/img/ico/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/style/img/ico/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Inkom" />
+    <link rel="manifest" href="/style/img/ico/site.webmanifest" />
+</head>
+
+<body>
+
+    <header class="container-fluid" id="startPage">
+
+        <div class="infoheader-wrapper">
+            <div class="info-header container-xxl d-flex roboto">
+                <a href="#contacts-nav" class="link-place pe-auto">
+                    <img src="style/img/place-ico.svg" alt="place-ico" class="place-ico">
+                </a>
+                <a href="tel:+375(29)622-73-23" class="info-boss fs-6 roboto">
+                    +375(29)622-73-23 / Директор Харевич Дмитрий Александрович
+                </a>
+                <a href="mailto:ooo@inkom.by" class="mail-boss roboto pe-auto">
+                    <img src="style/img/mail-ico.svg" alt="mail-ico" class="mail-ico">
+                    <span class="fs-6 roboto">ooo@inkom.by</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-xxl">
+            <div class="header-menu d-flex justify-content-between">
+                <div class="d-flex ">
+                    <svg class="inkom-logo-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 70"
+                        preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0, 70) scale(0.1, -0.1)" fill="#0048B0" stroke="none">
+                            <path d="M0 635 l0 -65 105 0 105 0 0 65 0 65 -105 0 -105 0 0 -65z" />
+                            <path d="M240 535 c0 -140 -2 -165 -15 -165 -12 0 -15 16 -15 85 l0 85 -105 0
+                                -105 0 0 -250 0 -251 103 3 102 3 0 118 c0 105 2 117 18 117 15 0 17 -13 17
+                                -140 l0 -140 345 0 345 0 0 40 0 40 -295 0 -295 0 0 263 0 262 145 -3 145 -3
+                                0 50 0 51 -195 0 -195 0 0 -165z m-96 -92 c3 -21 6 -107 6 -190 l0 -153 -45 0
+                                -45 0 0 190 0 190 39 0 c37 0 39 -2 45 -37z" />
+                        </g>
+                    </svg>
+                    <h1 class="logo-span fs-3">
+                        ООО«ИНКОМ»
+                    </h1>
+                </div>
+                <div class="menu d-flex">
+                    <a href="#catalog-nav">
+                        <button class="btn-my roboto">
+                            Каталог
+                        </button>
+                    </a>
+                    <a href="#contacts-nav">
+                        <button class="btn-my roboto">
+                            Контакты
+                        </button>
+                    </a>
+                </div>
+
+                <!--button burger start-->
+
+                <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!--button burger end-->
+
+            </div>
+        </div>
+
+        <!--burger menu start-->
+
+        <div class="overlay" id="overlay"></div>
+
+        <div class="openMenu d-flex" id="openMenu">
+            <button class="menu-close" id="menuClose" aria-label="Закрыть меню">
+                <img src="style/img/close.svg" alt="close" class="close-svg">
+            </button>
+            <nav class="linkMenu d-flex">
+                <ul class="navMenu d-flex">
+                    <li class="roboto">
+                        <a href="#catalog-nav" class="js-scroll">Каталог</a>
+                    </li>
+                    <li class="roboto">
+                        <a href="#contacts-nav" class="js-scroll">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--burger menu end-->
+
+    </header>
+
+    <main>
+
+        <div class="bg-section-1 container-fluid">
+            <section class="section-1 d-flex container-xxl">
+                <h1 class="text-1 roboto">
+                    Хроматографы, масс-спектрометры, лаборатории под&nbsp;ключ
+                </h1>
+                <h2 class="text-2 roboto">
+                    Одна компания&nbsp;— <br>полный цикл
+                </h2>
+                <p class="text-3 roboto">
+                    Уже более 35 лет компания «ИНКОМ» поставляет хроматографы, масс-спектрометры, системы
+                    пробоподготовки,
+                    автосемплеры, детекторы, колонки, расходные материалы, реализует проекты лабораторий
+                    под&nbsp;ключ,
+                    а&nbsp;также&nbsp;
+                    предоставляет полный комплекс услуг по&nbsp;обслуживанию и&nbsp;ремонту оборудования.
+                    Накопленный
+                    опыт
+                    и&nbsp;использование комплектующих от&nbsp;ведущих производителей — это&nbsp;главные причины
+                    выбора
+                    потребителей в&nbsp;нашу
+                    пользу.
+                </p>
+            </section>
+        </div>
+
+        <section class="section-2 container-xxl" id="catalog-nav">
+            <h1 class="title-section2 roboto">
+                ООО«ИНКОМ», как официальный дилер <br>завода–изготовителя <a href="https://chromatec.ru/"
+                    class="cromatec"><u>ЗАО«СКБ
+                        Хроматэк»</u></a>,
+                предлагает
+                <strong>каталог поставляемой продукции</strong>
+            </h1>
+            <div class="d-flex justify-content-between">
+                <a href="https://chromatec.ru/products/gc/#C5000" class="cards">
+                    <img src="style/img/gas-cromotography.png" class="card-img-top" alt="cromotography">
+                    <p class="card-text roboto">
+                        ГАЗОВАЯ ХРОМАТОГРАФИЯ
+                    </p>
+                </a>
+                <a href="https://chromatec.ru/products/peripherals/" class="cards">
+                    <img src="style/img/access.png" class="card-img-top" alt="access">
+                    <p class="card-text roboto">
+                        ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ
+                    </p>
+                </a>
+                <a href="https://chromatec.ru/products/gcms/" class="cards">
+                    <img src="style/img/spektrometria.png" class="card-img-top" alt="pektrometria">
+                    <p class="card-text roboto">
+                        МАСС-СПЕКТРОМЕТРИЯ
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <section class="container-xxl" id="contacts-nav">
+            <h1 class="title-section3 roboto">
+                Контакты
+            </h1>
+            <div class="contact-box d-flex">
+                <div class="contact-box-left">
+                    <a href="https://yandex.by/maps/org/inkom/148357004606/?ll=27.507156%2C53.869875&z=16.23"
+                        class="all-flex">
+                        <img src="style/img/address.svg" alt="address" class="contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Адрес:</b><br>
+                            220014, Республика&nbsp;Беларусь, г.&nbsp;Минск,
+                            ул.&nbsp;Минина, 23, ком. 402
+                        </span>
+                    </a>
+                    <a href="tel:+375(29)622-73-23" class="all-flex">
+                        <img src="style/img/phone.svg" alt="phone" class="contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Директор:</b><br>
+                            Харевич Дмитрий Александрович<br>
+                            +375 (29) 622-73-23
+                        </span>
+                    </a>
+                    <a href="tel:+375(44)762-74-75" class="all-flex">
+                        <img src="style/img/phone.svg" alt="phone" class="contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Инженер по наладке и испытаниям<br>
+                                "Газовая хроматография":</b><br>
+                            Корявчеков Валерий Сергеевич<br>
+                            + 375 (44) 762-74-75
+                        </span>
+                    </a>
+                    <a href="tel:+375(29)678-07-70" class="all-flex">
+                        <img src="style/img/phone.svg" alt="phone" class="contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Инженер по наладке и испытания<br>
+                                "Жидкостная хроматография":</b><br>
+                            Компанец Эдуар Юрьевич<br>
+                            + 375 (29) 678-07-70
+                        </span>
+                    </a>
+                    <a href="tel:+375(29)510-17-72" class="all-flex">
+                        <img src="style/img/phone.svg" alt="phone" class="contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Бухгалтер:</b><br>
+                            Ходосевич Наталья Ивановна<br>
+                            + 375 (29) 510-17-72
+                        </span>
+                    </a>
+                    <a href="mailto:ooo@inkom.by" class="all-flex">
+                        <img src="style/img/email.svg" alt="email" class="contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Электронная почта:</b><br>
+                            ooo@inkom.by
+                        </span>
+                    </a>
+                    <div class="all-flex">
+                        <img src="style/img/timework.svg" alt="timework" class="contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Время работы:</b><br>
+                            Пн - Пт с 9:00 до 18:00<br>
+                            Сб - Вс, праздники - выходной
+                        </span>
+                    </div>
+                    <div class="details all-flex">
+                        <img src="style/img/detail-list.svg" alt="detail-list"
+                            class="detail-list-svg contact-box-left-svg">
+                        <span class="section-3-text roboto">
+                            <b>Реквизиты:</b><br>
+                            директор Харевич Дмитрий Александрович<br> действующий на основании Устава<br>
+                            р/c BY 05 PJCB 3012 0038 3010 0000 0933<br> в ОАО «Приорбанк», ЦБУ 102220113,<br> г. Минск,
+                            Логойский
+                            тракт 15/1<br> БИК PJCBBY2X<br> УНН 100 084 076, ОКПО 28642616
+                        </span>
+                    </div>
+                </div>
+                <div class="location d-flex">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A426797085c896ada3aac11f1caadc30dac63c420cfa98778821687e416538195&amp;width=593&amp;height=495&amp;lang=ru_RU&amp;scroll=true">
+                        </script>
+                    <a href="#startPage">
+                        <div class="footer-right d-flex">
+                            <button class="btn-up">
+                                <img src="style/img/arrow.svg" alt="arrow" class="arrow-svg">
+                            </button>
+                            <span class="btn-up-text roboto">
+                                В начало страницы
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-end d-flex">
+                <img src="style/img/copyright.svg" alt="copyright" class="copyright-svg">
+                <span class="footer-end-text roboto">
+                    ООО«ИНКОМ» 2026 / Все права защищены.
+                </span>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
