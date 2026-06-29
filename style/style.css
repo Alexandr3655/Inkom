@@ -1,15 +1,11 @@
 /*подключение шрифтов*/
 
-@font-face {
+.roboto {
     font-display: swap;
-    src: url("fonts/Roboto-VariableFont.ttf") format("truetype");
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.roboto {
-    font-family: "Roboto", "TimesNewRoman";
     color: #ffffff;
 }
 
@@ -172,7 +168,7 @@ a:-webkit-any-link {
 }
 
 .bg-section-1 {
-    background: #000 url('../style/img/bg-section1.png') no-repeat center;
+    background: #000 url('../style/img/bg-section1.webp') no-repeat center;
     background-size: cover;
     padding: 0 !important;
     margin: 0 !important;
